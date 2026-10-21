@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pensieve"
+version = "0.1.0"
+description = "A tiny MCP memory server, one instance per store directory"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+pensieve = "pensieve:main"
+
+[tool.setuptools]
+py-modules = ["pensieve"]
+
+[tool.ruff]
+line-length = 100
